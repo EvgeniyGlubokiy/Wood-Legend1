@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Rent</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230324213047">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__text">
+						<h2 class="popup__title">Product order</h2>
+						<form action="files/sendmail/sendmail.php" method="POST">
+							<input data-required type="text" name="name" data-error="You must fill in all fields marked with *" placeholder="NAME*" class="input">
+							<input data-required type="text" name="phone" data-error="You must fill in all fields marked with *" placeholder="PHONE*" class="input">
+							<input data-required="email" type="text" name="email" data-error="You must fill in all fields marked with *" placeholder="E-MAIL*" class="input">
+							<input type="text" name="text" data-error="Error" placeholder="MESSAGE" class="input text-area">
+							<button type="submit" class="button btn">MAKE ORDER</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header data-scroll="150" data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="./index.html" class="header__body-logo2">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu-main">
+						<nav class="menu-main__body">
+							<ul data-da=".menu-side__list, 992, 0 " data-spollers="1366" class="menu-main__list">
+								<li class="menu-main__item"><a href="./index.html" class="menu-main__link">HOME</a></li>
+								<li class="menu-main__item">
+									<a href="#" class="menu-main__link">CATALOG</a>
+									<button data-spoller data-spoller-close type="button" class="menu-arrow _icon-menu-arrow"></button>
+									<ul class="menu-main__sub-list">
+										<li class="menu-main__sub-item"><a href="./gazebos.html" class="menu-main__sub-link">GAZEBOS</a>
+										</li>
+										<li class="menu-main__sub-item"><a href="./tables.html" class="menu-main__sub-link">TABLES</a>
+										</li>
+										<li class="menu-main__sub-item"><a href="./chairs.html" class="menu-main__sub-link">CHAIRS</a>
+										</li>
+										<!-- <li class="menu-main__sub-item"><a href="" class="menu-main__sub-link">WOODEN PRODUCTS</a></li> -->
+									</ul>
+								</li>
+								<li class="menu-main__item">
+									<a href="./index.html" class="header__body-logo">
+										<img src="img/logo.svg" alt="logo">
+									</a>
+								</li>
+								<li class="menu-main__item"><a data-goto-speed="1000" data-goto=".footer" href="#" class="menu-main__link">CONTACTS</a></li>
+								<li class="menu-main__item"><a href="./about.html" class="menu-main__link">ABOUT</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__menu-side menu-side">
+						<nav class="menu-side__body">
+							<ul class="menu-side__list">
+								<li class="menu-side__item"><a href="./rent.html" class="menu-side__link">RENT</a></li>
+								<li class="menu-side__item"><a href="./shiping.html" class="menu-side__link">SHIPPING & <br>
+										PAYMENT</a></li>
+								<li class="menu-side__item"><a href="" class="menu-side__link"></a></li>
+							</ul>
+						</nav>
+					</div>
+					<button type="button" class="menu-side__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="renting">
+				<div class="renting__container">
+					<img class="renting-decor01" src="img/renting-decor/01.svg" alt="decor">
+					<img class="renting-decor02" src="img/renting-decor/02.svg" alt="decor">
+					<img class="renting-decor03" src="img/renting-decor/03.svg" alt="decor">
+					<div class="renting__body">
+						<h2 class="renting__title title3">PICNIC TABLES RENT</h2>
+						<div class="renting__body-card">
+							<div class="renting-card">
+								<img class="renting-decor04" src="img/renting-decor/04.svg" alt="">
+								<div class="renting-card__image-ibg"><picture><source srcset="img/renting/01.webp" type="image/webp"><img src="img/renting/01.jpeg" alt="img"></picture></div>
+								<h2 class="renting-card__title">7ft TABLE</h2>
+								<table class="renting-card__table renting-table">
+									<tbody>
+										<tr class="renting-table__row1">
+											<td class="renting-table__sell">TABLE SIZE</td>
+											<td class="renting-table__sell">SEATS</td>
+											<td class="renting-table__sell">RATES</td>
+										</tr>
+										<tr class="renting-table__row2">
+											<td class="renting-table__sell">7ft</td>
+											<td class="renting-table__sell">6 People</td>
+											<td class="renting-table__sell">$350(3days) +tax</td>
+										</tr>
+									</tbody>
+								</table>
+								<h2 class="renting-card__title">2x7ft TABLE</h2>
+								<table class="renting-card__table renting-table">
+									<tbody>
+										<tr class="renting-table__row1">
+											<td class="renting-table__sell">TABLE SIZE</td>
+											<td class="renting-table__sell">SEATS</td>
+											<td class="renting-table__sell">RATES</td>
+										</tr>
+										<tr class="renting-table__row2">
+											<td class="renting-table__sell">14ft</td>
+											<td class="renting-table__sell">12 People</td>
+											<td class="renting-table__sell">$600(3days) +tax</td>
+										</tr>
+									</tbody>
+								</table>
+								<a href="#" data-popup="#popup" class="card-product__button btn">CALL US</a>
+							</div>
+							<div class="renting-card">
+								<img class="renting-decor05" src="img/renting-decor/02.svg" alt="">
+								<div class="renting-card__image-ibg"><picture><source srcset="img/renting/02.webp" type="image/webp"><img src="img/renting/02.jpeg" alt="img"></picture></div>
+								<h2 class="renting-card__title">7ft TABLE</h2>
+								<table class="renting-card__table renting-table">
+									<tbody>
+										<tr class="renting-table__row1">
+											<td class="renting-table__sell">TABLE SIZE</td>
+											<td class="renting-table__sell">SEATS</td>
+											<td class="renting-table__sell">RATES</td>
+										</tr>
+										<tr class="renting-table__row2">
+											<td class="renting-table__sell">7ft</td>
+											<td class="renting-table__sell">6 People</td>
+											<td class="renting-table__sell">$350(3days) +tax</td>
+										</tr>
+									</tbody>
+								</table>
+								<h2 class="renting-card__title">2x7ft TABLE</h2>
+								<table class="renting-card__table renting-table">
+									<tbody>
+										<tr class="renting-table__row1">
+											<td class="renting-table__sell">TABLE SIZE</td>
+											<td class="renting-table__sell">SEATS</td>
+											<td class="renting-table__sell">RATES</td>
+										</tr>
+										<tr class="renting-table__row2">
+											<td class="renting-table__sell">14ft</td>
+											<td class="renting-table__sell">12 People</td>
+											<td class="renting-table__sell">$600(3days) +tax</td>
+										</tr>
+									</tbody>
+								</table>
+								<a href="#" data-popup="#popup" class="card-product__button btn">CALL US</a>
+							</div>
+						</div>
+						<p class="renting__text">The price includes <span>delivery</span> , <span>installation</span> and
+							<span>pick
+								up</span> after
+							your party.
+							Delivery location radius from Kitchener <span>150km</span>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__body-logo">
+						<a href="./index.html" class="footer__logo-link">
+							<img src="img/logo.svg" alt="logo">
+						</a>
+					</div>
+					<div class="footer__body-contacts footer-contacts">
+						<h3 class="footer-contacts__title footer-title">contacts</h3>
+						<div class="footer-contacts__phone">
+							<span>Phone:</span>
+							<a href="tel:2265056136" class="footer-contacts__phone-link">(226) 505 6136</a>
+						</div>
+						<div class="footer-contacts__mail">
+							<span>Email:</span>
+							<a href="mailto:Woodlegend.info@gmail.com" class="footer-contacts__mail-link">Woodlegend.info@gmail.com</a>
+						</div>
+					</div>
+					<div class="footer__body-social footer-social">
+						<h3 class="footer-social__title footer-title">FOLLOW US</h3>
+						<div class="footer-social__link-block">
+							<a class="_icon-instagram" href="https://www.instagram.com/invites/contact/?i=1ei65qtj8hfl7&utm_content=brg8qub" target="_blank"></a>
+							<a class="_icon-facebook" href="https://www.facebook.com/profile.php?id=100063493205072&mibextid=LQQJ4d" target="_blank"></a>
+							<a class="_icon-youtube" href="https://youtube.com/@woodlegend" target="_blank"></a>
+						</div>
+					</div>
+					<div class="footer__body-copyrights">© All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230324213047"></script>
+</body>
+
+</html>
